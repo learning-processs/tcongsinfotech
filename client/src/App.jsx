@@ -3,6 +3,11 @@ import Hero from './components/Hero'
 import ChatWidget from './components/ChatWidget'
 import Headers from './components/Headers'
 import ServicesIntro from './components/ServicesIntro'
+import ProcessSection from './components/ProcessSection'
+import FaqSection from './components/FaqSection'
+import ContactFormSection from './components/ContactFormSection'
+import Footer from './components/Footer'
+import HeroVideo from './components/HeroVideo'
 
 const App = () => {
   return (
@@ -10,7 +15,12 @@ const App = () => {
       <Headers />
       <Hero />
       <ServicesIntro />
+      <ProcessSection />
+      <HeroVideo />
       <ChatWidget />
+      <FaqSection />
+      <ContactFormSection />
+      <Footer />
     </>
   )
 }
