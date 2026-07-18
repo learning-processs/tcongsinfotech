@@ -18,21 +18,13 @@ export default function Header() {
   return (
     <header className="relative z-30 flex items-center justify-between bg-black px-5 sm:px-8 lg:px-12 py-4 sm:py-5">
       {/* Logo */}
-      <div className="flex items-center gap-2">
-        <div className="relative h-9 w-9 sm:h-11 sm:w-11">
-          <div className="absolute left-0 top-0 h-4 w-4 sm:h-5 sm:w-5 rotate-45 bg-gradient-to-br from-yellow-400 to-orange-500" />
-          <div className="absolute right-0 top-1 h-5 w-5 sm:h-6 sm:w-6 -rotate-12 bg-[#FF2D6C]" />
-          <div className="absolute bottom-0 left-1 h-5 w-3 sm:h-6 sm:w-3.5 bg-[#1B3A8C]" />
-        </div>
-        <div className="leading-none">
-          <p className="text-lg sm:text-2xl font-extrabold tracking-tight text-white">
-            TCONGS
-          </p>
-          <p className="text-[9px] sm:text-xs font-semibold tracking-[0.3em] text-orange-400">
-            INFOTECH
-          </p>
-        </div>
-      </div>
+     <a href="#" className="flex items-center">
+  <img
+    src="/logo.png"
+    alt="Tcongs Infotech"
+    className="h-9 sm:h-12 w-auto object-contain"
+  />
+</a>
 
       {/* Desktop nav */}
       <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-white/80">
@@ -55,7 +47,9 @@ export default function Header() {
         >
           <button className="flex items-center gap-1 transition-colors hover:text-white">
             Solution
-            <span className={`transition-transform duration-250 ${solutionOpen ? "rotate-180" : "rotate-0"}`}>
+            <span
+              className={`transition-transform duration-250 ${solutionOpen ? "rotate-180" : "rotate-0"}`}
+            >
               <ChevronDown size={16} />
             </span>
           </button>
@@ -126,11 +120,7 @@ export default function Header() {
                 </p>
                 <div className="flex flex-col gap-3 pl-2">
                   {SOLUTIONS.map((sol) => (
-                    <a
-                      key={sol}
-                      href="#"
-                      className="text-sm hover:text-white"
-                    >
+                    <a key={sol} href="#" className="text-sm hover:text-white">
                       {sol}
                     </a>
                   ))}
