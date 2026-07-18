@@ -76,7 +76,7 @@ export default function HeroVideo() {
             playsInline
             className="absolute inset-0 h-full w-full object-cover"
           >
-            <source src="public/hero-video.mp4" type="video/mp4" />
+            <source src="/hero-video.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
         </motion.div>
